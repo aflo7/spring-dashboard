@@ -14,4 +14,38 @@ public class Employee {
         this.id = id;
     }
     
+    public String getName() {
+        return this.name;
+    }
+    
+    public void setName(String name) {
+        this.name = name;
+    }
+    
+    public String getDesignation() {
+        return this.designation;
+    }
+    
+    public void setDesignation(String designation) {
+        this.designation = designation;
+    }
+    
+    public String getDepartment() {
+        return this.department;
+    }
+    
+    public void setDepartment(String department) {
+        this.department = department;
+    }
+    
+    public int getId() {
+        return this.id;
+    }
+    
+    public void setId(int id) {
+        this.id = id;
+    }
+    
+    
+    
 }
