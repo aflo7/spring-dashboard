@@ -1,0 +1,12 @@
+nav {
+   background-color: #2E2D4D;
+   color: white;
+   padding: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+h1 {
+  margin: 0;
+}
