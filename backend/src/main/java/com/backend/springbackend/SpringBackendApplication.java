@@ -1,13 +1,13 @@
-package com.example.demo;
+package com.backend.springbackend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class RestApiApplication {
+public class SpringBackendApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(RestApiApplication.class, args);
+		SpringApplication.run(SpringBackendApplication.class, args);
 	}
 
 }
