@@ -1,0 +1,1 @@
+Project specification and requirements here: https://docs.kony.com/marketplace/employeedirectory/Content/employeedirectory.htm
