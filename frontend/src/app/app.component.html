@@ -3,8 +3,8 @@
 </style>
 
 <main class="main">
-  
-  <div style="display: flex; flex-direction: column; height: 100vh;">
+
+  <div style="display: flex; flex-direction: column; height: 100vh; background-color: red;">
     <nav>
       <h1>Employee Directory</h1>
       <div>user</div>
@@ -13,12 +13,13 @@
 
     <div style="display: flex; flex: 1;">
       <!-- <Menu model={items} /> -->
+      <div style="background-color: #2E2D4D; color: white;">Left bar</div>
 
-      <div style="
-            padding: 12px 20px;
-            width: 100%;
-          ">
-        <!-- <Directory /> -->
+      <div style="display: flex; flex-direction: column;">
+
+        @for (employee of employees; track employee) {
+        <div>{{employee.name}}</div>
+        }
       </div>
     </div>
   </div>

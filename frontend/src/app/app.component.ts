@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import axios from 'axios';
+import Employee from './interfaces/Employee';
+
 
 @Component({
   selector: 'app-root',
@@ -9,8 +11,14 @@ import axios from 'axios';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
+
+
 export class AppComponent {
-  title = 'spring-dashboard';
+
+  
+
+  title: string = 'spring-dashboard';
+  employees: Employee[] = []
 
   constructor() {
     this.getPosts()
@@ -18,13 +26,14 @@ export class AppComponent {
 
   async getPosts() {
     axios.get('http://localhost:8080/api/employees/all')
-    .then(function (response) {
+    .then((response) => {
       // handle success
-      console.log(response);
+      console.log(response.data);
+      this.employees = response.data.employeeArr
     })
-    .catch(function (error) {
+    .catch( (error) => {
       // handle error
-      console.log(error);
+      this.employees = []
     })
     .finally(function () {
       // always executed
